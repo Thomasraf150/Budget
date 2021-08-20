@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "gorditaregular", sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+
+  .container {
+    height: 300px;
+    height: 500px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .app-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .input-budget {
+    label {
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input {
+      display: block;
+      margin: 0 auto 10px;
+      border: 1px solid black;
+      text-align: center;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+
+  .results {
+    margin-top: 20px;
+    section {
+      margin-bottom: 30px;
+      input {
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .calculation-button {
+    input {
+      display: block;
+      margin: 0 auto;
+      background-color: purple;
+      font-weight: bold;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  }
+}
