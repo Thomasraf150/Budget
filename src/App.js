@@ -92,6 +92,8 @@ function App() {
     fields = <EightyTwenty />;
   } else if (value.event === "60-20-20") {
     fields = <SixtyTwentyTwenty />;
+  } else if (value.event === "60-40") {
+    fields = <SixtyFourty />;
   } else if (value.event === "70-20-10") {
     fields = <SeventyTwentyTen />;
   }
@@ -224,6 +226,7 @@ function App() {
               Choose your budgeting type!
             </option>
             <option value="50-30-20">50-30-20</option>
+            <option value="60-40">60-40</option>
             <option value="80-20">80-20</option>
             <option value="60-20-20">60-20-20</option>
             <option value="70-20-10">70-20-10</option>
