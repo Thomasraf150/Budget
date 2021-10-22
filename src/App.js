@@ -57,6 +57,17 @@ function App() {
     });
   };
 
+  const sixtyFourtyCalculate = (event) => {
+    event.preventDefault();
+    var sixtyPercent = state.originalValue * 0.6;
+    var fourtyPercent = state.originalValue * 0.4;
+    setState({
+      originalValue: state.originalValue,
+      sixty: sixtyPercent,
+      fourty: fourtyPercent,
+    });
+  };
+
   const seventyTwentyTenCalculate = (event) => {
     event.preventDefault();
     var seventyPercent = state.originalValue * 0.7;
@@ -176,6 +187,27 @@ function App() {
 
         <div className="calculation-button">
           <input type="button" value="Calculate!" onClick={seventyTwentyTenCalculate} />
+        </div>
+      </>
+    );
+  }
+
+  function SixtyFourty() {
+    return (
+      <>
+        <div className="results">
+          <section>
+            <label>60% = </label>
+            <input name="fifth" disabled value={state.sixty} />
+          </section>
+          <section>
+            <label>40% = </label>
+            <input name="thirty" disabled value={state.fourty} />
+          </section>
+        </div>
+
+        <div className="calculation-button">
+          <input type="button" value="Calculate!" onClick={sixtyFourtyCalculate} />
         </div>
       </>
     );
