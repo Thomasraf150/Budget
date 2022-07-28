@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "gorditaregular", sans-serif;
+	box-sizing: border-box;
+}
+
+.App {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+
+	.container {
+		min-height: 500px;
+		max-height: 1000px;
+		border: 2px solid purple;
+		border-radius: 10px;
+		padding: 30px;
+	}
+
+	.app-title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.budget-type {
+		margin-bottom: 20px;
+		select {
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			height: 50px;
+			width: 300px;
+			border: 1px solid purple;
+			border-radius: 5px;
+			font-size: 20px;
+			outline: none;
+		}
+	}
+
+	.input-budget {
+		form {
+			display: flex;
+			input,
+			button {
+				height: 50px;
+				border: 1px solid black;
+			}
+
+			input {
+				text-align: center;
+				font-size: 20px;
+				flex: 90%;
+				border-right: none;
+				outline: none;
+			}
+
+			input:disabled,
+			button:disabled {
+				background: lightgray;
+			}
+
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			/* Firefox */
+			input[type="number"] {
+				-moz-appearance: textfield;
+			}
+
+			button {
+				background-color: green;
+				font-size: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex: 10%;
+				border-left: none;
+			}
+		}
+	}
+
+	.results {
+		margin-top: 20px;
+		section {
+			margin-bottom: 30px;
+			label {
+				grid-area: label;
+			}
+			input {
+				grid-area: input;
+				margin-left: 10px;
+				background-color: transparent;
+				font-weight: bold;
+				font-size: 20px;
+				width: 100px;
+			}
+		}
+	}
+
+	.hidden {
+		visibility: hidden;
+	}
+}

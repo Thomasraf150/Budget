@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "gorditaregular", sans-serif;
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.App .container {
+  min-height: 500px;
+  max-height: 1000px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 30px;
+}
+.App .app-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.App .budget-type {
+  margin-bottom: 20px;
+}
+.App .budget-type select {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 300px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+}
+.App .input-budget form {
+  display: flex;
+  /* Firefox */
+}
+.App .input-budget form input,
+.App .input-budget form button {
+  height: 50px;
+  border: 1px solid black;
+}
+.App .input-budget form input {
+  text-align: center;
+  font-size: 20px;
+  flex: 90%;
+  border-right: none;
+  outline: none;
+}
+.App .input-budget form input:disabled,
+.App .input-budget form button:disabled {
+  background: lightgray;
+}
+.App .input-budget form input::-webkit-outer-spin-button,
+.App .input-budget form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.App .input-budget form input[type=number] {
+  -moz-appearance: textfield;
+}
+.App .input-budget form button {
+  background-color: green;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 10%;
+  border-left: none;
+}
+.App .results {
+  margin-top: 20px;
+}
+.App .results section {
+  margin-bottom: 30px;
+}
+.App .results section label {
+  grid-area: label;
+}
+.App .results section input {
+  grid-area: input;
+  margin-left: 10px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100px;
+}
+.App .hidden {
+  visibility: hidden;
+}/*# sourceMappingURL=budget.css.map */
